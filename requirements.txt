@@ -18,10 +18,17 @@ perlin-noise==1.13
 pillow==11.0.0
 pycparser==2.22
 pyparsing==3.2.0
+PyQt6==6.7.1
+PyQt6-Qt6==6.7.3
+PyQt6_sip==13.8.0
+PySide6==6.8.0.2
+PySide6_Addons==6.8.0.2
+PySide6_Essentials==6.8.0.2
 python-dateutil==2.9.0.post0
 QT-PyQt-PySide-Custom-Widgets==1.0.2
 QtPy==2.4.1
 qtsass==0.4.0
+shiboken6==6.8.0.2
 six==1.16.0
 termcolor==2.5.0
 tinycss2==1.4.0
