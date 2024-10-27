@@ -301,7 +301,19 @@
      </widget>
     </item>
     <item>
-     <widget class="QWidget" name="mainBody" native="true"/>
+     <widget class="QWidget" name="mainBody" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_10">
+       <item>
+        <widget class="QWidget" name="header" native="true"/>
+       </item>
+       <item>
+        <widget class="QWidget" name="mainContents" native="true"/>
+       </item>
+       <item>
+        <widget class="QWidget" name="footer" native="true"/>
+       </item>
+      </layout>
+     </widget>
     </item>
    </layout>
   </widget>
