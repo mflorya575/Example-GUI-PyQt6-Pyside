@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>MainWindow</class>
  <widget class="QMainWindow" name="MainWindow">
@@ -14,52 +14,145 @@
    <string>MainWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true" />
+   <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QFrame" name="frame">
-    <property name="geometry">
-     <rect>
-      <x>190</x>
-      <y>110</y>
-      <width>391</width>
-      <height>141</height>
-     </rect>
-    </property>
-    <property name="frameShape">
-     <enum>QFrame::StyledPanel</enum>
-    </property>
-    <property name="frameShadow">
-     <enum>QFrame::Raised</enum>
-    </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
-     <item>
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="center"&gt;&lt;span style=" font-size:14pt;"&gt;MODERN UI&lt;/span&gt;&lt;span style=" font-size:12pt; vertical-align:super;"&gt;TM&lt;/span&gt;&lt;/p&gt;&lt;p align="center"&gt;&lt;span style=" font-style:italic;"&gt;Start Designing Your UI&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton">
-       <property name="text">
-        <string />
-       </property>
-       <property name="icon">
-        <iconset resource="../Qss/icons/_icons.qrc">
-         <normaloff>:/feather/Icons/feather/airplay.png</normaloff>:/feather/Icons/feather/airplay.png</iconset>
-       </property>
-       <property name="iconSize">
-        <size>
-         <width>32</width>
-         <height>32</height>
-        </size>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QWidget" name="leftmenu" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item alignment="Qt::AlignLeft|Qt::AlignTop">
+        <widget class="QWidget" name="widget" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QPushButton" name="menuBtn">
+            <property name="text">
+             <string/>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/menu.png</normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/menu.png</iconset>
+            </property>
+            <property name="shortcut">
+             <string/>
+            </property>
+            <property name="autoDefault">
+             <bool>false</bool>
+            </property>
+            <property name="default">
+             <bool>false</bool>
+            </property>
+            <property name="flat">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignLeft|Qt::AlignTop">
+        <widget class="QWidget" name="widget_3" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <item>
+           <widget class="QPushButton" name="Home">
+            <property name="text">
+             <string>Home</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/home.png</normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/home.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="DataAnalysis">
+            <property name="text">
+             <string>Data Analysis</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/list.png</normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/list.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Reports">
+            <property name="text">
+             <string>Reports</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/printer.png</normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/printer.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Graphs">
+            <property name="text">
+             <string>Graphs</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/pie-chart.png</normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/pie-chart.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item alignment="Qt::AlignLeft|Qt::AlignBottom">
+        <widget class="QWidget" name="widget_2" native="true">
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QPushButton" name="Settings">
+            <property name="text">
+             <string>Settings</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/settings.png</normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/settings.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="Information">
+            <property name="text">
+             <string>Information</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/info.png</normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/info.png</iconset>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="pushButton_3">
+            <property name="text">
+             <string>Help</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/help-circle.png</normaloff>../../../../../Custom_Widgets/main/Qss/icons/fefefe/feather/help-circle.png</iconset>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="centerMenu" native="true"/>
+    </item>
+    <item>
+     <widget class="QWidget" name="mainBody" native="true"/>
+    </item>
+   </layout>
   </widget>
  </widget>
- <connections />
-<customwidgets><customwidget><class>QPushButton</class><extends>QPushButton</extends><header location="global">Custom_Widgets.Theme.h</header><container>1</container></customwidget><customwidget><class>QLabel</class><extends>QLabel</extends><header location="global">Custom_Widgets.Theme.h</header><container>1</container></customwidget></customwidgets></ui>
+ <resources>
+  <include location="../../Qss/icons/_icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>
