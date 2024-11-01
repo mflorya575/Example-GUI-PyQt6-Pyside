@@ -31,14 +31,31 @@ class GuiFunctions():
         # Add theme to the theme list
         self.populateThemeList(current_theme)
 
+        # Connect theme change signal to change app theme
+        self.ui.themeList.currentTextChanged.connect(self.changeAppTheme)
+
     def populateThemeList(self, current_theme):
         """Populate the list from available app themes"""
-        theme_count = -1
+        theme_count = 0
         for theme in self.ui.themes:
             self.ui.themeList.addItem(theme.name, theme.name)
-            # check default theme/current theme
+
+            # Check if it's the default theme/current theme
             if theme.defaultTheme or theme.name == current_theme:
-                self.ui.themeList.setCurrentIndex(theme_count)  # select the theme
+                self.ui.themeList.setCurrentIndex(theme_count)  # Select the theme
+            theme_count += 1  # Increment the theme count
+
+    # change app theme
+    def changeAppTheme(self):
+        """Change app theme based on user selection"""
+        settings = QSettings()
+        selected_theme = self.ui.themeList.currentData()
+        current_theme = settings.value('THEME')
+
+        if current_theme != selected_theme:
+            # apply new theme
+            settings.setValue('THEME', selected_theme)
+            QAppSettings.updateAppSettings(self.main, reloadJson=True)
 
     # apply custom font
     def loadProductSansFont(self):
