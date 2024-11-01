@@ -15,6 +15,9 @@ class GuiFunctions():
         self.main = MainWindow
         self.ui = MainWindow.ui
 
+        # apply font
+        self.loadProductSansFont()
+
         # init app theme
         self.initializeAppTheme()
 
@@ -36,3 +39,22 @@ class GuiFunctions():
             # check default theme/current theme
             if theme.defaultTheme or theme.name == current_theme:
                 self.ui.themeList.setCurrentIndex(theme_count)  # select the theme
+
+    # apply custom font
+    def loadProductSansFont(self):
+        """Load and apply product sans font"""
+        font_id = QFontDatabase.addApplicationFont('../fonts/ProductSans-Regular.ttf')
+        # if font loaded
+        if font_id == -1:
+            print('Failed to load Product Sans font')
+            return
+
+        # Apply font
+        font_family = QFontDatabase.applicationFontFamilies(font_id)
+        if font_family:
+            product_sans = QFont(font_family[0])
+        else:
+            product_sans = QFont('Sans Serif')
+
+        # Apply to main window
+        self.main.setFont(product_sans)
